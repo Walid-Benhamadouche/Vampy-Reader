@@ -1,0 +1,22 @@
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\bin\Debug\Vampy Reader.exe.config
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\bin\Debug\Vampy Reader.exe
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\bin\Debug\Vampy Reader.pdb
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy Reader.csprojAssemblyReference.cache
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\MainWindow.g.cs
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\App.g.cs
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy Reader_MarkupCompile.cache
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy Reader_MarkupCompile.lref
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\MainWindow.baml
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy Reader.g.resources
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy_Reader.Properties.Resources.resources
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy Reader.csproj.GenerateResource.cache
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy Reader.exe
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy Reader.pdb
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\bin\Debug\FluentWPF.dll
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\bin\Debug\MaterialDesignColors.dll
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy Reader.csproj.CopyComplete
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy Reader.csproj.CoreCompileInputs.cache
