@@ -33,10 +33,7 @@
             <Grid Grid.Row="0" Margin="0,-4,0,4">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="6*"/>
-                    <RowDefinition Height="6*"/>
-                    <RowDefinition Height="13*"/>
-                    <RowDefinition Height="0.2*"/>
-                    <RowDefinition Height="118.8*"/>
+                    <RowDefinition Height="138*"/>
                 </Grid.RowDefinitions>
 
                 <Grid Grid.Row="0">
@@ -60,90 +57,7 @@
                         <Image Margin="5" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/delete_96px.png"></Image>
                     </Button>
                 </Grid>
-                <Grid Grid.Row="1">
-                    <TextBox Width="300" Name="SearchBook" HorizontalAlignment="Left" Foreground="White" Background="#797979" Margin="30,0,0,0" Padding="6" />
-                    <TextBlock IsHitTestVisible="False" Text="Search Book" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="39,7,0,7" Foreground="DarkGray">
-                        <TextBlock.Style>
-                            <Style TargetType="{x:Type TextBlock}">
-                                <Setter Property="Visibility" Value="Collapsed"/>
-                                <Style.Triggers>
-                                    <DataTrigger Binding="{Binding Text, ElementName=SearchBook}" Value="">
-                                        <Setter Property="Visibility" Value="Visible"/>
-                                    </DataTrigger>
-                                </Style.Triggers>
-                            </Style>
-                        </TextBlock.Style>
-                    </TextBlock>
-                </Grid>
-                <Grid Grid.Row="2">
-                    <TextBlock Foreground="White" Opacity="0.8" FontWeight="Bold" FontSize="35" Margin="30,0,0,0" VerticalAlignment="Bottom">Home</TextBlock>
-                </Grid>
-                <Grid Grid.Row="3" Background="White" Opacity="0.3" HorizontalAlignment="Left" Width="940" Margin="30,0,0,0"/>
-                <Grid Grid.Row="4">
-                    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
-                        <ItemsControl Name="BookList">
-                            <ItemsControl.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <WrapPanel/>
-                                </ItemsPanelTemplate>
-                            </ItemsControl.ItemsPanel>
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <Grid>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="260*"/>
-                                            <RowDefinition Height="0*"/>
-                                        </Grid.RowDefinitions>
-                                        <Grid Grid.Row="0" Height="260" Width="160" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,30,0,0">
-                                            
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition Height="160*"/>
-                                                <RowDefinition Height="40*"/>
-                                            </Grid.RowDefinitions>
-                                            <Grid Grid.Row="0">
-                                                <Image Source="{Binding backGroundImagePath}"/>
-                                            </Grid>
-                                            <Grid Grid.Row="1">
-                                                <TextBlock Foreground="White" Opacity="0.8" FontSize="15" TextWrapping="Wrap" Text="{Binding name}"/>
-                                            </Grid>
-                                        </Grid>
-                                        <Grid x:Name="Stats" Height="260" Width="160" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,29.5,0,0" Background="Black" Opacity="0">
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition Height="25*"/>
-                                                <RowDefinition Height="150*"/>
-                                                <RowDefinition Height="85*"/>
-                                            </Grid.RowDefinitions>
-                                            <Grid.Triggers>
-                                                <EventTrigger RoutedEvent="Grid.MouseEnter">
-                                                    <EventTrigger.Actions>
-                                                        <BeginStoryboard>
-                                                            <Storyboard Completed="Storyboard_Completed">
-                                                                <DoubleAnimation SpeedRatio="7" Storyboard.TargetName="Stats"  Storyboard.TargetProperty="Opacity" From="0" To="0.8" Duration="0:0:1" AutoReverse="False"/>
-                                                            </Storyboard>
-                                                        </BeginStoryboard>
-                                                    </EventTrigger.Actions>
-                                                </EventTrigger>
-                                                <EventTrigger RoutedEvent="Grid.MouseLeave">
-                                                    <EventTrigger.Actions>
-                                                        <BeginStoryboard>
-                                                            <Storyboard Completed="Storyboard_Completed">
-                                                                <DoubleAnimation SpeedRatio="7" Storyboard.TargetName="Stats"  Storyboard.TargetProperty="Opacity" From="0.8" To="0" Duration="0:0:1" AutoReverse="False"/>
-                                                            </Storyboard>
-                                                        </BeginStoryboard>
-                                                    </EventTrigger.Actions>
-                                                </EventTrigger>
-                                            </Grid.Triggers>
-                                            <Grid Grid.Row="0">
-                                                <Image HorizontalAlignment="Right" VerticalAlignment="Top" Width="20" Margin="0,2,2,0" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/star_filled_96px.png"/>
-                                            </Grid>
-                                        </Grid>
-                                    </Grid>
-                                    
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
-                    </ScrollViewer>
-                </Grid>
+                <Frame Grid.Row="1" Source="Home.xaml" NavigationUIVisibility="Hidden"/>
             </Grid>
 
         </Grid>

@@ -20,3 +20,5 @@ C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\bin\Debug\MaterialDesignTh
 C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy Reader.csproj.CopyComplete
 C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy Reader.csproj.CoreCompileInputs.cache
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Home.g.cs
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Home.baml
