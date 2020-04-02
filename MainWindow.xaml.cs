@@ -61,12 +61,36 @@ namespace Vampy_Reader
             this.MaxHeight = SystemParameters.WorkArea.Height+8;
             this.MaxWidth = SystemParameters.WorkArea.Width+8;
             InitializeComponent();
+
+            List<Book> Books = new List<Book>();
+            Books.Add(new Book("ReZero Vol 01", "C:/Users/Aures/Desktop/WpfDemo/Covers/1.png", 300, 0));
+            Books.Add(new Book("Dragon Age - The Masked Empire", "C:/Users/Aures/Desktop/WpfDemo/Dragon Age - The Masked Empire/OEBPS/images/9781466828100.jpg", 300, 0));
+            Books.Add(new Book("ReZero Vol 01", "C:/Users/Aures/Desktop/WpfDemo/Covers/1.png", 300, 0));
+            Books.Add(new Book("Dragon Age - The Masked Empire", "C:/Users/Aures/Desktop/WpfDemo/Dragon Age - The Masked Empire/OEBPS/images/9781466828100.jpg", 300, 0));
+            Books.Add(new Book("ReZero Vol 01", "C:/Users/Aures/Desktop/WpfDemo/Covers/1.png", 300, 0));
+            Books.Add(new Book("Dragon Age - The Masked Empire", "C:/Users/Aures/Desktop/WpfDemo/Dragon Age - The Masked Empire/OEBPS/images/9781466828100.jpg", 300, 0));
+            Books.Add(new Book("ReZero Vol 01", "C:/Users/Aures/Desktop/WpfDemo/Covers/1.png", 300, 0));
+            Books.Add(new Book("Dragon Age - The Masked Empire", "C:/Users/Aures/Desktop/WpfDemo/Dragon Age - The Masked Empire/OEBPS/images/9781466828100.jpg", 300, 0));
+            Books.Add(new Book("ReZero Vol 01", "C:/Users/Aures/Desktop/WpfDemo/Covers/1.png", 300, 0));
+            Books.Add(new Book("Dragon Age - The Masked Empire", "C:/Users/Aures/Desktop/WpfDemo/Dragon Age - The Masked Empire/OEBPS/images/9781466828100.jpg", 300, 0));
+            Books.Add(new Book("ReZero Vol 01", "C:/Users/Aures/Desktop/WpfDemo/Covers/1.png", 300, 0));
+            Books.Add(new Book("Dragon Age - The Masked Empire", "C:/Users/Aures/Desktop/WpfDemo/Dragon Age - The Masked Empire/OEBPS/images/9781466828100.jpg", 300, 0));
+            Books.Add(new Book("ReZero Vol 01", "C:/Users/Aures/Desktop/WpfDemo/Covers/1.png", 300, 0));
+            Books.Add(new Book("Dragon Age - The Masked Empire", "C:/Users/Aures/Desktop/WpfDemo/Dragon Age - The Masked Empire/OEBPS/images/9781466828100.jpg", 300, 0));
+            Books.Add(new Book("ReZero Vol 01", "C:/Users/Aures/Desktop/WpfDemo/Covers/1.png", 300, 0));
+            Books.Add(new Book("Dragon Age - The Masked Empire", "C:/Users/Aures/Desktop/WpfDemo/Dragon Age - The Masked Empire/OEBPS/images/9781466828100.jpg", 300, 0));
+            Books.Add(new Book("ReZero Vol 01", "C:/Users/Aures/Desktop/WpfDemo/Covers/1.png", 300, 0));
+            Books.Add(new Book("Dragon Age - The Masked Empire", "C:/Users/Aures/Desktop/WpfDemo/Dragon Age - The Masked Empire/OEBPS/images/9781466828100.jpg", 300, 0));
+
+            BookList.ItemsSource = Books;
+
             CloseApp.Click += (s, e) => { System.Windows.Application.Current.Shutdown(); };
             Minimize.Click += (s, e) => { WindowState = WindowState.Minimized; };
             DragBar.MouseDown += (s, e) => { this.DragMove(); };
             DragBar2.MouseDown += (s, e) => { this.DragMove(); };
-            //WindowChrome.SetWindowChrome(this, new WindowChrome());
+
         }
+
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -95,5 +119,14 @@ namespace Vampy_Reader
             Marshal.FreeHGlobal(accentPtr);
         }
 
+        private void Storyboard_Completed(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Storyboard_Completed_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

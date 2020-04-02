@@ -48,16 +48,16 @@
                     </Grid.ColumnDefinitions>
                     <Grid Grid.Column="0" Name="DragBar" Background="#202020"/>
                     <!--Minimize-->
-                    <Button Grid.Column="1" Background="#202020" BorderThickness="0" Name="Minimize">
-                        <Image Margin="5" Source="C:/Users/Aures/Desktop/icons/subtract_96px.png"></Image>
+                    <Button Grid.Column="1" Background="#202020" BorderThickness="0" Name="Minimize" Margin="0,4,0,-4">
+                        <Image Margin="5" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/subtract_96px.png"></Image>
                     </Button>
                     <!--Maxisimize and restore-->
-                    <Button Grid.Column="2" Background="#202020" BorderThickness="0">
-                        <Image Margin="5" Source="C:/Users/Aures/Desktop/icons/restore_down_96px.png"></Image>
+                    <Button Grid.Column="2" Background="#202020" BorderThickness="0" Margin="0,4,0,-4">
+                        <Image Margin="5" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/restore_down_96px.png"></Image>
                     </Button>
                     <!--Close-->
-                    <Button Grid.Column="3" Background="#202020" BorderThickness="0" Name="CloseApp">
-                        <Image Margin="5" Source="C:/Users/Aures/Desktop/icons/delete_96px.png"></Image>
+                    <Button Grid.Column="3" Background="#202020" BorderThickness="0" Name="CloseApp" Margin="0,4,0,-4">
+                        <Image Margin="5" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/delete_96px.png"></Image>
                     </Button>
                 </Grid>
                 <Grid Grid.Row="1">
@@ -80,7 +80,69 @@
                 </Grid>
                 <Grid Grid.Row="3" Background="White" Opacity="0.3" HorizontalAlignment="Left" Width="940" Margin="30,0,0,0"/>
                 <Grid Grid.Row="4">
-                    
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                        <ItemsControl Name="BookList">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="260*"/>
+                                            <RowDefinition Height="0*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0" Height="260" Width="160" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,30,0,0">
+                                            
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="160*"/>
+                                                <RowDefinition Height="40*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid Grid.Row="0">
+                                                <Image Source="{Binding backGroundImagePath}"/>
+                                            </Grid>
+                                            <Grid Grid.Row="1">
+                                                <TextBlock Foreground="White" Opacity="0.8" FontSize="15" TextWrapping="Wrap" Text="{Binding name}"/>
+                                            </Grid>
+                                        </Grid>
+                                        <Grid x:Name="Stats" Height="260" Width="160" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,29.5,0,0" Background="Black" Opacity="0">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="25*"/>
+                                                <RowDefinition Height="150*"/>
+                                                <RowDefinition Height="85*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.Triggers>
+                                                <EventTrigger RoutedEvent="Grid.MouseEnter">
+                                                    <EventTrigger.Actions>
+                                                        <BeginStoryboard>
+                                                            <Storyboard Completed="Storyboard_Completed">
+                                                                <DoubleAnimation SpeedRatio="7" Storyboard.TargetName="Stats"  Storyboard.TargetProperty="Opacity" From="0" To="0.8" Duration="0:0:1" AutoReverse="False"/>
+                                                            </Storyboard>
+                                                        </BeginStoryboard>
+                                                    </EventTrigger.Actions>
+                                                </EventTrigger>
+                                                <EventTrigger RoutedEvent="Grid.MouseLeave">
+                                                    <EventTrigger.Actions>
+                                                        <BeginStoryboard>
+                                                            <Storyboard Completed="Storyboard_Completed">
+                                                                <DoubleAnimation SpeedRatio="7" Storyboard.TargetName="Stats"  Storyboard.TargetProperty="Opacity" From="0.8" To="0" Duration="0:0:1" AutoReverse="False"/>
+                                                            </Storyboard>
+                                                        </BeginStoryboard>
+                                                    </EventTrigger.Actions>
+                                                </EventTrigger>
+                                            </Grid.Triggers>
+                                            <Grid Grid.Row="0">
+                                                <Image HorizontalAlignment="Right" VerticalAlignment="Top" Width="20" Margin="0,2,2,0" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/star_filled_96px.png"/>
+                                            </Grid>
+                                        </Grid>
+                                    </Grid>
+                                    
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
                 </Grid>
             </Grid>
 
@@ -107,7 +169,7 @@
             <Grid Grid.Row="1" Background="Transparent">
                 <Ellipse Height="80" Width="80">
                     <Ellipse.Fill>
-                        <ImageBrush ImageSource="C:/Users/Aures/Desktop/icons/3.png"/>
+                        <ImageBrush ImageSource="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/3.png"/>
                     </Ellipse.Fill>
                 </Ellipse>
             </Grid>
@@ -127,7 +189,7 @@
                     <TextBlock Foreground="White" FontSize="15" Opacity="0.8">Home</TextBlock>
                 </Grid>
                 <Grid Grid.Column="1">
-                    <Image Margin="12" Opacity="0.8" Source="C:/Users/Aures/Desktop/icons/home_32px.png"/>
+                    <Image Margin="12" Opacity="0.8" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/home_32px.png"/>
                 </Grid>
             </Grid>
             <!-- Add Book-->
@@ -142,7 +204,7 @@
                     <TextBlock Foreground="White" FontSize="15" Opacity="0.8" Margin="5,0">Add Book</TextBlock>
                 </Grid>
                 <Grid Grid.Column="1">
-                    <Image Margin="12" Opacity="0.8" Source="C:/Users/Aures/Desktop/icons/plus_math_96px.png"/>
+                    <Image Margin="12" Opacity="0.8" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/plus_math_96px.png"/>
                 </Grid>
             </Grid>
             <!-- Favorite-->
@@ -157,7 +219,7 @@
                     <TextBlock Foreground="White" FontSize="15" Opacity="0.8" Margin="5,0">Favorite</TextBlock>
                 </Grid>
                 <Grid Grid.Column="1">
-                    <Image Margin="12" Opacity="0.8" Source="C:/Users/Aures/Desktop/icons/star_filled_96px.png"/>
+                    <Image Margin="12" Opacity="0.8" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/star_filled_96px.png"/>
                 </Grid>
             </Grid>
             <!-- Add Collection-->
@@ -172,7 +234,7 @@
                     <TextBlock Foreground="White" FontSize="15" Opacity="0.8" Margin="5,0">Add Collection</TextBlock>
                 </Grid>
                 <Grid Grid.Column="1">
-                    <Image Margin="12" Opacity="0.8" Source="C:/Users/Aures/Desktop/icons/book_stack_50px.png"/>
+                    <Image Margin="12" Opacity="0.8" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/book_stack_50px.png"/>
                 </Grid>
             </Grid>
             <!--Sparator-->
@@ -191,7 +253,7 @@
                     <TextBlock Foreground="White" FontSize="15" Opacity="0.8">Settings</TextBlock>
                 </Grid>
                 <Grid Grid.Column="1">
-                    <Image Margin="12" Opacity="0.8" Source="C:/Users/Aures/Desktop/icons/settings_96px.png"/>
+                    <Image Margin="12" Opacity="0.8" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/settings_96px.png"/>
                 </Grid>
             </Grid>
             <!--Log out-->
@@ -206,7 +268,7 @@
                     <TextBlock Foreground="White" FontSize="15" Opacity="0.8">Log out</TextBlock>
                 </Grid>
                 <Grid Grid.Column="1">
-                    <Image Margin="12" Opacity="0.8" Source="C:/Users/Aures/Desktop/icons/exit_32px.png"/>
+                    <Image Margin="12" Opacity="0.8" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/exit_32px.png"/>
                 </Grid>
             </Grid>
         </Grid>
