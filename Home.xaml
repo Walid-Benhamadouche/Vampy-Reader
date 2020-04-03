@@ -31,7 +31,7 @@
             </TextBlock>
         </Grid>
         <Grid Grid.Row="1">
-            <TextBlock Foreground="White" Opacity="0.8" FontWeight="Bold" FontSize="35" Margin="30,0,0,0" VerticalAlignment="Bottom">Home</TextBlock>
+            <TextBlock Foreground="White" Opacity="0.8" FontWeight="Bold" FontSize="35" Margin="30,0,0,0" VerticalAlignment="Bottom" MouseUp="TextBlock_MouseUp">Home</TextBlock>
         </Grid>
         <Grid Grid.Row="2" Background="White" Opacity="0.3" HorizontalAlignment="Left" Width="940" Margin="30,0,0,0"/>
         <Grid Grid.Row="3">
@@ -90,6 +90,21 @@
                                     </Grid.Triggers>
                                     <Grid Grid.Row="0">
                                         <Image HorizontalAlignment="Right" VerticalAlignment="Top" Width="20" Margin="0,2,2,0" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/star_filled_96px.png"/>
+                                    </Grid>
+                                    <Grid Grid.Row="1" Tag="{Binding bookPath}" MouseUp="ReadBook">
+                                        <Image x:Name="play" Width="50" Height="50" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/play_52px.png" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                            <Image.Triggers>
+                                                <EventTrigger RoutedEvent="Image.MouseEnter">
+                                                    <EventTrigger.Actions>
+                                                        <BeginStoryboard>
+                                                            <Storyboard >
+                                                                <DoubleAnimation SpeedRatio="7" Storyboard.TargetName="play"  Storyboard.TargetProperty="Height" From="50" To="100" Duration="0:0:1" AutoReverse="True"/>
+                                                            </Storyboard>
+                                                        </BeginStoryboard>
+                                                    </EventTrigger.Actions>
+                                                </EventTrigger>
+                                            </Image.Triggers>
+                                        </Image>
                                     </Grid>
                                 </Grid>
                             </Grid>

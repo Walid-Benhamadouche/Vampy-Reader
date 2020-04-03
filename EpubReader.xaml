@@ -1,0 +1,16 @@
+﻿<Page x:Class="Vampy_Reader.EpubReader"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Vampy_Reader"
+      mc:Ignorable="d" 
+      d:DesignHeight="713" d:DesignWidth="940"
+      Title="EpubReader">
+
+    <Grid>
+        <WebBrowser x:Name="Epub" Source="https://www.google.com">
+            
+        </WebBrowser>
+    </Grid>
+</Page>

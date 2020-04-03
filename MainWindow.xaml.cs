@@ -99,14 +99,5 @@ namespace Vampy_Reader
             Marshal.FreeHGlobal(accentPtr);
         }
 
-        private void Storyboard_Completed(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Storyboard_Completed_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

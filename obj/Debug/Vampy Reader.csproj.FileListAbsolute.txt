@@ -22,3 +22,5 @@ C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy Reader.csp
 C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Vampy Reader.csproj.CoreCompileInputs.cache
 C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Home.g.cs
 C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\Home.baml
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\EpubReader.g.cs
+C:\Users\Aures\source\repos\Vampy Reader\Vampy Reader\obj\Debug\EpubReader.baml

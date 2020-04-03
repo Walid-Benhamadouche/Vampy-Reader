@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterScreen"
         ResizeMode="CanResize"
         Loaded="Window_Loaded"
-        mc:Ignorable="d" AllowsTransparency="True"
+        mc:Ignorable="d" AllowsTransparency="False"
         Title="MainWindow" Height="720" Width="1280" WindowStyle="None">
     <WindowChrome.WindowChrome>
         <WindowChrome 
@@ -25,7 +25,7 @@
     <Grid>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="270*"/>
+            <ColumnDefinition x:Name="menu" Width="270*"/>
             <ColumnDefinition Width="940*"/>
         </Grid.ColumnDefinitions>
 
@@ -43,7 +43,7 @@
                         <ColumnDefinition Width="30*"/>
                         <ColumnDefinition Width="30*"/>
                     </Grid.ColumnDefinitions>
-                    <Grid Grid.Column="0" Name="DragBar" Background="#202020"/>
+                    <Grid Grid.Column="0" Name="DragBar" Background="#202020" Margin="0,4,0,-4"/>
                     <!--Minimize-->
                     <Button Grid.Column="1" Background="#202020" BorderThickness="0" Name="Minimize" Margin="0,4,0,-4">
                         <Image Margin="5" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/subtract_96px.png"></Image>
@@ -57,7 +57,7 @@
                         <Image Margin="5" Source="C:/Users/Aures/source/repos/Vampy Reader/Vampy Reader/resources/delete_96px.png"></Image>
                     </Button>
                 </Grid>
-                <Frame Grid.Row="1" Source="Home.xaml" NavigationUIVisibility="Hidden"/>
+                <Frame x:Name="RightFrame" Grid.Row="1" Source="Home.xaml" NavigationUIVisibility="Hidden"  Margin="0,5,0,-10"/>
             </Grid>
 
         </Grid>
